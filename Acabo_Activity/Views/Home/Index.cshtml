@@ -1,0 +1,150 @@
+﻿@{
+    ViewData["Title"] = "My Website";
+
+}
+<html>
+<style>
+
+
+    .caption {
+        position: absolute;
+        top: 50%;
+        transform: translate(0, -50%);
+        text-align: left;
+        letter-spacing: 2px;
+        margin-left: 0%;
+    }
+
+    .greeting {
+        font-size: 30px;
+        margin-bottom: 0px;
+        font-weight: 1000;
+        text-transform: uppercase;
+        color: #fff;
+    }
+
+    .name {
+        font-size: 50px;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+        font-weight: 800;
+        color: #fff;
+    }
+
+    .title {
+        font-size: 15px;
+        margin-bottom: 0px;
+        font-weight: 600;
+        text-transform: uppercase;
+        color: #fff;
+    }
+
+    .Description {
+        font-size: 12px;
+        margin-bottom: 0px;
+        font-weight: 200;
+        color: #fff;
+        width: 600px;
+        margin-top: 20px;
+    }
+
+    .more-info {
+        background-color: rgba(255, 255, 255, 0.8);
+        padding: 20px;
+        margin-top: 20px;
+        color: #333;
+        position: absolute;
+        top: 120%;
+        left: 5%;
+        width: 90%;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        min-height: 100vh;
+        display: flex; /* Display children as flex items */
+        flex-wrap: wrap; /* Allow items to wrap to the next line */
+    }
+
+    .info-box {
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        padding: 0px;
+        width: calc(20% - 20px); /* Adjusted width with margin included */
+        box-sizing: border-box;
+        margin: 0 10px 20px 0; /* Adjusted margin */
+        overflow: hidden; /* Hide overflow content */
+        transition: border-color 0.3s ease; /* Add transition for border color */
+    }
+
+    .info-item {
+        display: block;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        opacity: 0; /* Show content by default */
+        transition: opacity 0.3s ease; /* Add transition for opacity */
+    }
+
+    .more-info:hover .info-item {
+        opacity: 1;
+    }
+
+    .info-label {
+        font-weight: bold;
+        margin-right: 5px;
+    }
+
+    .info-image {
+        max-width: 100%;
+        height: 300px;
+        margin-top: 20px;
+        margin-left: 45px;
+    }
+</style>
+<body>
+    <div class="caption">
+        <p class="title">PERSONAL PORTFOLIO</p>
+        <p class="greeting">Introducing...</p>
+        <p class="name">Rosswell E. Acabo</p>
+        <p class="title">Web Developer | System Analyst</p>
+        <p class="Description">
+            19 years old bachelor of science in information technology student in Quezon City University.
+            Aspiring Web developer who wants to design future websites that will help everyone and will give me more opportunity to
+            enhance my skills.
+        </p>
+
+        <img src="images/line.png" alt="Your Image" style="max-height: 250px; max-width: 250px; margin-left: 10px; margin-top: 50px;">
+    </div>
+    <div class="caption d-flex ">
+        <img src="images/me4.png" alt="Your Image" style="max-height: 540px; max-width: 540px; margin-left: 650px; ">
+    </div>
+    <div class="container">
+        <div class="more-info">
+            <h2 style="width: 40%; text-align: center;">Contact Information</h2>
+            <div class="info-box">
+                <div class="info-item">
+                    <span class="info-label">Address:</span>
+                    <span>Brgy. 180 Little Baguio st. Miramonte Height Caloocan City</span>
+                </div>
+            </div>
+            <div class="info-box">
+                <div class="info-item">
+                    <span class="info-label">Phone:</span>
+                    <span>09155584550</span>
+                </div>
+            </div>
+            <div class="info-box">
+                <div class="info-item">
+                    <span class="info-label">Email:</span>
+                    <span>acabo.rosswell.estranero@gmail.com</span>
+                </div>
+            </div>
+            <div class="info-image">
+                <img src="~/images/me 1.jpg" alt="More Info Image" class="info-image">
+                <img src="~/images/me2.jpg" alt="More Info Image" class="info-image">
+                <img src="~/images/me3.jpg" alt="More Info Image" class="info-image">
+
+            </div>
+        </div>
+    </div>
+</body>
+</html>
